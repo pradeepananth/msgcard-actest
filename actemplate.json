@@ -20,6 +20,14 @@
       "$data": "${sections}",
       "items": [
         {
+          "type": "TextBlock",
+          "text": "${title}",
+          "$when": "${not(empty(title))}",
+          "wrap": true,
+          "weight": "Bolder",
+          "style": "heading"
+        },
+        {
           "type": "ColumnSet",
           "columns": [
             {
@@ -68,6 +76,13 @@
           ]
         },
         {
+          "type": "Image",
+          "url": "${heroImage.image}",
+          "$when": "${not(empty(heroImage))}",
+          "altText": "${heroImage.title}",
+          "size": "stretch"
+        },
+        {
           "type": "TextBlock",
           "text": "${text}",
           "$when": "${not(empty(text))}",
@@ -85,13 +100,6 @@
               "value": "${value}"
             }
           ]
-        },
-        {
-          "type": "Image",
-          "url": "${heroImage.image}",
-          "$when": "${not(empty(heroImage))}",
-          "altText": "${heroImage.title}",
-          "size": "stretch"
         },
         {
           "type": "Image",
