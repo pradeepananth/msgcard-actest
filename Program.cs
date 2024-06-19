@@ -9,7 +9,7 @@ class Program
         var acTemplateJson = File.ReadAllText("actemplate.json");
         var messageCardInput = File.ReadAllText("msgcard.json");
         // var messageCardInput = File.ReadAllText("msgcardTwitter.json");
-        // string messageCardInput = File.ReadAllText("msgcardWithoutSections.json");
+        // // var messageCardInput = File.ReadAllText("msgcardWithoutSections.json");
 
         // Create a Template instance from the template payload
         AdaptiveCardTemplate template = new AdaptiveCardTemplate(acTemplateJson);
