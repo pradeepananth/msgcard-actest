@@ -7,8 +7,8 @@ class Program
     static void Main(string[] args)
     {
         var acTemplateJson = File.ReadAllText("actemplate.json");
-        var messageCardInput = File.ReadAllText("msgcardTwitter.json");
-        // var messageCardInput = File.ReadAllText("msgcard.json");
+        var messageCardInput = File.ReadAllText("msgcard.json");
+        // var messageCardInput = File.ReadAllText("msgCardSharePointRequest.json");
         // var messageCardInput = File.ReadAllText("msgcardWithoutSections.json");
 
         // Create a Template instance from the template payload
